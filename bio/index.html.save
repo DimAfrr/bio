@@ -1,0 +1,98 @@
+      padding: 0;
+      background: black;
+      overflow: hidden;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+    }
+
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .profile {
+      margin-top: 60px;
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    .profile img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid white;
+      box-shadow: 0 0 20px cyan, 0 0 40px cyan;
+    }
+
+    .typing {
+      font-size: 26px;
+      margin-top: 20px;
+      height: 40px;
+      white-space: nowrap;
+      overflow: hidden;
+      display: inline-block;
+      border-right: 3px solid cyan;
+      color: cyan;
+      text-shadow: 0 0 5px cyan, 0 0 15px cyan, 0 0 30px cyan;
+      animation: blink .7s step-end infinite, glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes blink {
+      from, to { border-color: transparent }
+      50% { border-color: cyan; }
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 5px cyan, 0 0 15px cyan, 0 0 30px cyan, 0 0 50px cyan;
+      }
+      to {
+        text-shadow: 0 0 10px #00fff7, 0 0 25px #00fff7, 0 0 50px #00fff7, 0 0 80px #00fff7;
+      }
+    }
+
+    .music-controls {
+      margin-top: 20px;
+      animation: fadeIn 2s ease forwards;
+    }
+
+    button {
+      background: cyan;
+      color: black;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+      box-shadow: 0 0 10px cyan;
+    }
+
+    button:hover {
+      background: white;
+      color: black;
+      box-shadow: 0 0 20px cyan;
+    }
+
+    .links {
+      margin-top: 30px;
+    }
+
+    .links a {
+      display: block;
+      margin: 10px auto;
+      text-decoration: none;
+      color: white;
+      background: rgba(0, 255, 255, 0.15);
+      padding: 12px;
+      width: 220px;
+      border-radius: 25px;
+      transition: 0.4s;
+      font-weight: bold;
+      letter-spacing: 1px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: slideUp 0.8s ease forwards;
+      box-shadow: 0 0 
